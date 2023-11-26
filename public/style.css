@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c111e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  color: #fff;
+}
+
+#searchContainer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#searchBox {
+  width: 30rem;
+  height: 1.5rem;
+  border: 1px solid black;
+  background-color: #24293c;
+  font-size: 1rem;
+  padding-inline: 0.25rem;
+  padding-block: 1rem;
+  color: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#searchButton {
+  width: fit-content;
+  border: 1px solid black;
+  background-color: #eee;
+  transform: translateY(20%) translateX(-8%);
+  height: 2.125rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.search_icon {
+  color: #6f7584;
+  font-weight: 900;
+}
+
+#results {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.year_container {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+#titleValue,
+#yearValue,
+#descriptionValue {
+  max-width: 45vw;
+}
+
+#titleValue {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+#descriptionValue {
+  color: #6f7584;
+  margin-bottom: 0.35rem;
+  font-size: 1.3rem;
+}
+
+#year {
+  color: #6f7584;
+  font-size: 1.3rem;
+}
+
+#yearValue {
+  color: #6f7584;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 660px) {
+  h1,
+  #titleValue {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #searchContainer {
+    text-align: center;
+  }
+
+  #searchBox {
+    width: 75%;
+  }
+
+  #results {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .details {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .movie_icon_container {
+    margin-inline: auto;
+  }
+
+  #titleValue,
+  #yearValue,
+  #descriptionValue {
+    max-width: 90vw;
+  }
+}
